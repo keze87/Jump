@@ -302,7 +302,7 @@ struct TVectorDatos cargarVectorDatos () {
 	printf (" m = 50+40*(%d-90000)/10000 = %f\n", aux.numeroDePadron, aux.masa);
 	printf ("k1 = 40+10*(%d-90000)/10000 = %f\n", aux.numeroDePadron, aux.k1);
 	printf ("k2 = 1\n");
-	printf ("c1 =   3+2*(%d-90000)/10000 = %f\n", aux.numeroDePadron, aux.c1);
+	printf ("c1 =  3+ 2*(%d-90000)/10000 =  %f\n", aux.numeroDePadron, aux.c1);
 	printf ("c2 = 1.5\n");
 
 	return aux;
@@ -316,10 +316,22 @@ int proceso () {
 	imprimirEnunciado (1);
 	datos = cargarVectorDatos ();
 
-	/*
 	imprimirEnunciado (2);
+	printf ("m*a = ΣF\n");
+	printf ("a = y''\n");
+	printf ("m*y'' = Felastica-m*g\n\n");
+	printf ("La persona salta desde y=150 hasta y=ymin.\n");
+	printf ("Felastica = {  0   si y ≥ H-L0\n");
+	printf ("              k1*x si y < H-L0 }\n");
+	printf ("x = H-L0-y\n");
+
 	imprimirEnunciado (3);
+	printf ("m*g*H = 0.5*k1*x^2+m*g*ymin\n");
+	printf ("x = H-L0-ymin\n");
+	printf ("∴ ymin ≈ 41.5984253747183\n");
+
 	imprimirEnunciado (4);
+	/*
 	imprimirEnunciado (5);
 	imprimirEnunciado (7);
 	imprimirEnunciado (8);
